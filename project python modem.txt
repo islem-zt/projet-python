@@ -78,10 +78,10 @@ while cycle < number_of_cycles:
     cycle_start_index = cycle_start_index + N
     
 #pyl.plot(ts,original_theta)
-#pyl.plot(ts,theta_corrected)
+#pyl.plot(ts,theta_corrected
 #pyl.show()    
 
-
+#demodulation
 ym_demod = theta_corrected / (2.0 * pyl.pi * ts *  mod_fact) - fc / mod_fact 
 # Remove offset that was added before modulation
 ym_demod = ym_demod - 1
@@ -89,6 +89,7 @@ ym_demod = ym_demod - 1
 #pyl.plot(ts,ym_demod)
 #pyl.show()
 
+#modulation
 ym = theta_corrected / (2.0 * pyl.pi * ts *  mod_fact) - fc / mod_fact   
 
 pyl.plot(ts,ym)
